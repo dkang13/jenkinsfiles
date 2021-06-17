@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('curl call') {
             steps {
-                echo 'Hello world!' 
+                curl -X GET -u dalkang:Kan78735TX http://qef-linux1.deloitte.com:8085/job/NMSLO_run/
             }
         }
     }
